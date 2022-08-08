@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>As imagens dinâmicas são redimensionadas dependendo do tamanho da tela que está sendo exibida.</p>
+
+    <picture>
+        <!-- A ordem destes comandos abaixo são fundamentais -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)"srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <h1>Arquivos de áudio</h1>
+    <p>Aprendendo como reproduzir áudio em HTML5</p>
+    <!-- Abaixo opções que podem variar, sendo um ou outra dependendo o navegador -->
+    <audio src="mídia/audio.mp3" controls autoplay></audio>
+    <p>Para baixar: <a href="mídia/audio.mp3">Clique aqui!</a></p>
+    <!-- Outra opção -->
+    <audio>
+      <source src="mídia/audio.mp3" type="audio/mp3">
+    </audio>
+    <p>ou</p>
+    <audio>
+    <source src="mídia/audio.mp3" type="audio/mpeg">
+    </audio>
+    <p>ou</p>
+    <audio>
+        <source src="mídia/audio.ogg" type="audio/ogg">
+    </audio>
+
+</body>
+</html>
