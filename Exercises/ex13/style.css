@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(45deg, #729bd8, rgb(37, 130, 184), rgb(55, 209, 236), rgb(37, 130, 184));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul {
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: 1160px;
+left: 100px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #cfb4a8;
+    padding: 5px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+background-color: #e98b11 ;
+}
+div{
+    background-color: rgb(203, 211, 230);
+    padding: 5px;
+}
+nav#menu a{
+    color: #000000;
+    text-decoration: none;
+}
