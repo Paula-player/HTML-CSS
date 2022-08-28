@@ -11,16 +11,35 @@
         }
         table{
             width: 400px;
+            border-collapse: separate;
+            position: relative;
 
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n-1) {
+            background-color: lightblue;
+        }         
+        
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,10 +57,11 @@
         table
      -->
      <table>
+        <caption>População das Unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px";>População</th>
             </tr>
         </thead>
         <tbody>
@@ -57,14 +77,79 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 943</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 919 049</td>
+            </tr>
+            <tr>
+                <td> Minas Gerais </td>
+                <td> 21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>0000</strong></td>
             </tr>
         </tfoot>
      </table>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente esse dolores impedit ex corporis cum doloribus laudantium a cupiditate, doloremque incidunt quae explicabo facere vero ut obcaecati, aliquam pariatur! <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iusto voluptatum tempora excepturi numquam nulla quod expedita velit, eaque, laborum ipsam, perferendis aliquam ex esse explicabo impedit provident. Sapiente, sit. <br>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae officia in quidem tempore ipsam quis nam eum quod? Excepturi doloremque quos asperiores ullam totam rerum repudiandae magnam eos. Eveniet, ratione.
+     </p>
 </body>
 
 </html>
