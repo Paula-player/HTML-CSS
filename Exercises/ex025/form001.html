@@ -13,10 +13,16 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form>
-    <!-- <form > <form action="cadastro.php"> É o código para enviar os dados em caso de uso da linguagem PHP -->
-        <p>Nome: <input type="text" name="nome" id="nome"> </p>
-        <p>Sobrenome <input type="text" name="sobrenome" id="sobrenome"> </p>
+    <form action="cadastro.php" method="POST" autocomplete="off"> 
+        <!-- method get: se o link pode ser compartilhável, praticidade, sem necessidade de privacidade. 
+        method POST:informações sensíveis: senhas, dados bancários, dados pessoais.
+    <form action="cadastro.php"> É o código para enviar os dados em caso de uso da linguagem PHP -->
+        <p><label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="isobrenome"> 
+        </p>
         <p> <input type="submit" value="Enviar"> </p>
     </form>
 </body>
